@@ -1,3 +1,16 @@
+/**
+ * Description:
+ * Demonstrates Playwright multi-user testing using multiple BrowserContext instances.
+ * - Creates three isolated browser contexts.
+ * - Opens one page in each context.
+ * - Logs in with three different user accounts.
+ * - Verifies the number of browser contexts and pages.
+ * - Prints cookies for each context to demonstrate session isolation.
+ *
+ * Author: Ankur
+ * Date: 21-Jul-2026
+ */
+
 import { test, expect, BrowserContext,Page } from '@playwright/test';
 
 test('multi user test', async ({ browser }) => {

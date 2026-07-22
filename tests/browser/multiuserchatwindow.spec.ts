@@ -1,3 +1,16 @@
+/**
+ * Description:
+ * Demonstrates Playwright multi-user chat testing using multiple BrowserContext instances.
+ * - Creates four isolated browser contexts.
+ * - Opens the chat application in four independent browser sessions.
+ * - Simulates four users (U1, U2, U3, and U4) joining the chat.
+ * - Sends chat messages from each user to verify independent user interactions.
+ * - Demonstrates concurrent multi-user session handling with isolated browser contexts.
+ *
+ * Author: Ankur
+ * Date: 21-Jul-2026
+ */
+
 import { test, expect, BrowserContext, Page } from '@playwright/test';
 
 test('multi user chat window', async ({ browser }) => {
