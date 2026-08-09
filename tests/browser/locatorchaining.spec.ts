@@ -7,7 +7,4 @@ test('locator', async ({ page }) => {
     let componentslink = page.getByRole('link',{name:'Components'})
     let tabletlinks = page.getByRole('link',{name:'Tablets'})
     
-
-
-
 });
