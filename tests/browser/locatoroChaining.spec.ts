@@ -48,7 +48,7 @@ test('Click on Multiple checkboxes on a page', async ({ page }) => {
 
 test('Get score of each batsmen from Cricinfo scorecard', async ({ page }) => {
 
-    await page.goto('https://www.espncricinfo.com/series/india-in-sri-lanka-2026-1543999/sri-lanka-cricket-xi-vs-india-tour-match-1548444/full-scorecard');
+    await page.goto('https://www.cricinfo.com/series/india-in-sri-lanka-2026-1543999/sri-lanka-cricket-xi-vs-india-tour-match-1548444/full-scorecard');
 
     let rows = page.locator('table.ci-scorecard-table').last().locator('tbody tr');
 
